@@ -49,7 +49,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Foto" id="v2J-xU-DMx"/>
                     <connections>
-                        <segue destination="qih-ut-52e" kind="show" id="3g8-QL-3ye"/>
+                        <segue destination="qih-ut-52e" kind="show" identifier="effectSegue" id="3g8-QL-3ye"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -122,10 +122,10 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdN-hM-Wrp">
+                            <view hidden="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdN-hM-Wrp">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="x2K-1t-TcQ">
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="x2K-1t-TcQ">
                                         <rect key="frame" x="169" y="315" width="37" height="37"/>
                                         <color key="color" red="1" green="1" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
                                     </activityIndicatorView>

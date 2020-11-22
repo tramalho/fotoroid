@@ -13,13 +13,20 @@ class EffectsViewController: UIViewController {
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var photo: UIImageView!
+
+    var image: UIImage? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        photo.image = image
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+
 
     /*
     // MARK: - Navigation
