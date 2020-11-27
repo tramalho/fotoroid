@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3751E95225636ABD00303008 /* EffectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3751E95125636ABD00303008 /* EffectsViewController.swift */; };
 		3751E95425636AD400303008 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3751E95325636AD400303008 /* FinalViewController.swift */; };
+		37B00A3E257091F400369839 /* EffectsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B00A3D257091F400369839 /* EffectsCollectionViewCell.swift */; };
 		37E0E74F255B6B4D004C02F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E0E74E255B6B4D004C02F6 /* AppDelegate.swift */; };
 		37E0E751255B6B4D004C02F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E0E750255B6B4D004C02F6 /* ViewController.swift */; };
 		37E0E754255B6B4D004C02F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E0E752255B6B4D004C02F6 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		3751E95125636ABD00303008 /* EffectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsViewController.swift; sourceTree = "<group>"; };
 		3751E95325636AD400303008 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		37B00A3D257091F400369839 /* EffectsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsCollectionViewCell.swift; sourceTree = "<group>"; };
 		37E0E74B255B6B4D004C02F6 /* fotoroid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fotoroid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E0E74E255B6B4D004C02F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37E0E750255B6B4D004C02F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		37E0E74D255B6B4D004C02F6 /* fotoroid */ = {
 			isa = PBXGroup;
 			children = (
+				37B00A3D257091F400369839 /* EffectsCollectionViewCell.swift */,
 				37E0E74E255B6B4D004C02F6 /* AppDelegate.swift */,
 				37E0E750255B6B4D004C02F6 /* ViewController.swift */,
 				37E0E752255B6B4D004C02F6 /* Main.storyboard */,
@@ -147,6 +150,7 @@
 				37F68AAD256DCEF00009BE36 /* FilterManager.swift in Sources */,
 				37E0E751255B6B4D004C02F6 /* ViewController.swift in Sources */,
 				3751E95425636AD400303008 /* FinalViewController.swift in Sources */,
+				37B00A3E257091F400369839 /* EffectsCollectionViewCell.swift in Sources */,
 				37E0E74F255B6B4D004C02F6 /* AppDelegate.swift in Sources */,
 				3751E95225636ABD00303008 /* EffectsViewController.swift in Sources */,
 			);

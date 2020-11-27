@@ -21,7 +21,7 @@ class FilterManager {
     
     private let originalImage: UIImage
     private let context = CIContext(options: nil)
-    private let filterNames = [
+    let filterNames = [
         "CIComicEffect",
         "CISepiaTone",
         "CICMYHalftone",

@@ -88,20 +88,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="faD-Bd-HVI">
                                 <rect key="frame" x="16" y="84" width="343" height="427"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cDZ-sA-rxE">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cDZ-sA-rxE">
                                 <rect key="frame" x="16" y="567" width="343" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="14j-jH-0m4"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WBH-tq-5Cg">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WBH-tq-5Cg">
                                     <size key="itemSize" width="60" height="80"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="BfO-jE-QXh">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="BfO-jE-QXh" customClass="EffectsCollectionViewCell" customModule="fotoroid" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -119,8 +119,15 @@
                                             <constraint firstItem="4Wa-QI-xyp" firstAttribute="leading" secondItem="BfO-jE-QXh" secondAttribute="leading" id="bJW-7K-ZSX"/>
                                             <constraint firstAttribute="trailing" secondItem="4Wa-QI-xyp" secondAttribute="trailing" id="s6x-MC-pop"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="image" destination="4Wa-QI-xyp" id="KEg-r0-3Pz"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="qih-ut-52e" id="2Oj-nj-Y9H"/>
+                                    <outlet property="delegate" destination="qih-ut-52e" id="Fhq-fl-e97"/>
+                                </connections>
                             </collectionView>
                             <view hidden="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdN-hM-Wrp">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
