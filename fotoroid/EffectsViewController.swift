@@ -25,6 +25,12 @@ class EffectsViewController: UIViewController {
     "crystallize","vignette","noir"
     ]
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? FinalViewController {
+            vc.image = photo.image
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         photo.image = image
